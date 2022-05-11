@@ -9,16 +9,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class OneALv {
     private final String HOME_PAGE_URL = "http://1a.lv";
     private final By LOGO = By.className("main-logo");
-    private final By LANGUAGE_SWITCH = By.xpath("/html/body/div[2]/div[1]/div/ul/li[4]/a");
-    private final By ORDER_SEARCH = By.xpath("/html/body/div[2]/div[1]/div/div/ul/li[6]/a");
+    private final By LANGUAGE_SWITCH = By.xpath(".//a[@hreflang = 'ru']");
+    private final By ORDER_SEARCH = By.xpath(".//a[@href = '/order_search']");
     private final By SEARCH_INPUT_FIELD = By.id("q");
     private final By SEARCH_ICON = By.xpath(".//button[@class = 'main-search-submit']");
     private final By WISHLIST = By.xpath(".//a[@class = 'favorite-items__handle']");
     private final By COOKIES = By.id("CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll");
-    private final By SUBMENU_PC = By.xpath(".//a[@href = '/c/datortehnika-preces-birojam/2pd']");
-    //private final By SUBMENU_PC = By.xpath(".//a[@class = 'submenu-lvl1__link']");
-    //private final By SUBMENU_PC = By.xpath(".//a[@class = 'submenu-lvl1__link']");
-    //private final By SUBMENU_PC = By.xpath(".//a[@class = 'submenu-lvl1__link']");
+    private final By SUBMENU_PC = By.xpath(".//li[@class = 'submenu-lvl1__list-item color-theme-17 submenu-lvl1__list-item--has-child']");
+    private final By SUBMENU_PC_COMPONENTS = By.xpath(".//a[@href = '/c/datoru-komponentes-tikla-produkti/2pe']");
+    private final By SUBMENU_SMARTPHONES = By.xpath(".//a[@href = '/c/telefoni-plansetdatori-apple-veikals/2pc']");
+    private final By SUBMENU_TV = By.xpath(".//a[@href = '/c/tv-audio-video-spelu-konsoles/2pf']");
     private final By MAIN_BANNER = By.xpath(".//a[@class = 'welcome-carousel-slider__slide-link']");
 
     @Test
@@ -90,7 +90,7 @@ public class OneALv {
     }
 
     @Test
-    public void subMenu() {
+    public void subMenuPc() {
         System.setProperty("webdriver.chrome.driver", "D:/QAGuru/Selenium/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.manage().window().maximize();
@@ -98,6 +98,39 @@ public class OneALv {
 
         WebElement subMenuPc = browser.findElement(SUBMENU_PC);
         subMenuPc.click();
+    }
+
+    @Test
+    public void subMenuPcComponents() {
+        System.setProperty("webdriver.chrome.driver", "D:/QAGuru/Selenium/chromedriver.exe");
+        WebDriver browser = new ChromeDriver();
+        browser.manage().window().maximize();
+        browser.get(HOME_PAGE_URL);
+
+        WebElement subMenuPcComponents = browser.findElement(SUBMENU_PC_COMPONENTS);
+        subMenuPcComponents.click();
+    }
+
+    @Test
+    public void subMenuSmartphones() {
+        System.setProperty("webdriver.chrome.driver", "D:/QAGuru/Selenium/chromedriver.exe");
+        WebDriver browser = new ChromeDriver();
+        browser.manage().window().maximize();
+        browser.get(HOME_PAGE_URL);
+
+        WebElement subMenuSmartphones = browser.findElement(SUBMENU_SMARTPHONES);
+        subMenuSmartphones.click();
+    }
+
+    @Test
+    public void subMenuTv() {
+        System.setProperty("webdriver.chrome.driver", "D:/QAGuru/Selenium/chromedriver.exe");
+        WebDriver browser = new ChromeDriver();
+        browser.manage().window().maximize();
+        browser.get(HOME_PAGE_URL);
+
+        WebElement subMenuTv = browser.findElement(SUBMENU_TV);
+        subMenuTv.click();
     }
 
     @Test
