@@ -23,7 +23,7 @@ public class OneALv {
 
     @Test
     public void logoCheck() {
-        System.setProperty("webdriver.chrome.driver", "D:/QAGuru/Selenium/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:/QAGuru 2/Selenium/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.manage().window().maximize();
         browser.get(HOME_PAGE_URL);
@@ -34,7 +34,7 @@ public class OneALv {
 
     @Test
     public void languageSwitch() {
-        System.setProperty("webdriver.chrome.driver", "D:/QAGuru/Selenium/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:/QAGuru 2/Selenium/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.manage().window().maximize();
         browser.get(HOME_PAGE_URL);
@@ -45,7 +45,7 @@ public class OneALv {
 
     @Test
     public void orderSearch() {
-        System.setProperty("webdriver.chrome.driver", "D:/QAGuru/Selenium/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:/QAGuru 2/Selenium/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.manage().window().maximize();
         browser.get(HOME_PAGE_URL);
@@ -56,7 +56,7 @@ public class OneALv {
 
     @Test
     public void searchIcon() {
-        System.setProperty("webdriver.chrome.driver", "D:/QAGuru/Selenium/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:/QAGuru 2/Selenium/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.manage().window().maximize();
         browser.get(HOME_PAGE_URL);
@@ -69,7 +69,7 @@ public class OneALv {
 
     @Test
     public void wishlist() {
-        System.setProperty("webdriver.chrome.driver", "D:/QAGuru/Selenium/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:/QAGuru 2/Selenium/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.manage().window().maximize();
         browser.get(HOME_PAGE_URL);
@@ -80,7 +80,7 @@ public class OneALv {
 
     @Test
     public void cookies() {
-        System.setProperty("webdriver.chrome.driver", "D:/QAGuru/Selenium/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:/QAGuru 2/Selenium/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.manage().window().maximize();
         browser.get(HOME_PAGE_URL);
@@ -91,7 +91,7 @@ public class OneALv {
 
     @Test
     public void subMenuPc() {
-        System.setProperty("webdriver.chrome.driver", "D:/QAGuru/Selenium/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:/QAGuru 2/Selenium/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.manage().window().maximize();
         browser.get(HOME_PAGE_URL);
@@ -102,7 +102,7 @@ public class OneALv {
 
     @Test
     public void subMenuPcComponents() {
-        System.setProperty("webdriver.chrome.driver", "D:/QAGuru/Selenium/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:/QAGuru 2/Selenium/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.manage().window().maximize();
         browser.get(HOME_PAGE_URL);
@@ -113,7 +113,7 @@ public class OneALv {
 
     @Test
     public void subMenuSmartphones() {
-        System.setProperty("webdriver.chrome.driver", "D:/QAGuru/Selenium/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:/QAGuru 2/Selenium/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.manage().window().maximize();
         browser.get(HOME_PAGE_URL);
@@ -124,7 +124,7 @@ public class OneALv {
 
     @Test
     public void subMenuTv() {
-        System.setProperty("webdriver.chrome.driver", "D:/QAGuru/Selenium/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:/QAGuru 2/Selenium/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.manage().window().maximize();
         browser.get(HOME_PAGE_URL);
@@ -135,7 +135,7 @@ public class OneALv {
 
     @Test
     public void mainBanner() {
-        System.setProperty("webdriver.chrome.driver", "D:/QAGuru/Selenium/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:/QAGuru 2/Selenium/chromedriver.exe");
         WebDriver browser = new ChromeDriver();
         browser.manage().window().maximize();
         browser.get(HOME_PAGE_URL);
