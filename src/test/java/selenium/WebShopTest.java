@@ -14,7 +14,7 @@ public class WebShopTest {
     private final String HOME_PAGE_URL = "http://1a.lv";
     private final By SEARCH_INPUT_FIELD = By.id("q");
     private final By PRODUCT_TYPE = By.xpath(".//span[@class = 'single-title']");
-    private final By COOKIES = By.id("CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll");
+    private final By ACCEPT_COOKIES = By.id("CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll");
     private final String CATEGORY_NAME = "Apple AirPods";
 
     @Test
@@ -25,9 +25,9 @@ public class WebShopTest {
         browser.get(HOME_PAGE_URL);
 
         WebDriverWait wait = new WebDriverWait(browser, Duration.ofSeconds(5));
-        wait.until(ExpectedConditions.elementToBeClickable(COOKIES));
+        wait.until(ExpectedConditions.elementToBeClickable(ACCEPT_COOKIES));
 
-        browser.findElement(COOKIES).click();
+        browser.findElement(ACCEPT_COOKIES).click();
 
         WebElement searchField = browser.findElement(SEARCH_INPUT_FIELD);
         searchField.sendKeys("Apple");
