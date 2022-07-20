@@ -15,7 +15,7 @@ Feature: Weather API testing
       | description | scattered clouds |
       | icon        | 03n              |
 
-    And base is "stations"
+    And base is: "stations"
 
     And main is:
       | temp     | 300.15 |
@@ -24,16 +24,16 @@ Feature: Weather API testing
       | temp_min | 300.15 |
       | temp_max | 300.15 |
 
-    And visibility is "10000"
+    And visibility is: 10000
 
     And wind is:
       | speed | 3.6 |
       | deg   | 160 |
 
-    And cloud is:
+    And clouds are:
       | all | 40 |
 
-    And dt is "1485790200"
+    And dt is: 1485790200
 
     And sys is:
       | type    | 1          |
@@ -43,9 +43,9 @@ Feature: Weather API testing
       | sunrise | 1485720272 |
       | sunset  | 1485766550 |
 
-    And id is "2172797"
+    And id is: 2172797
 
-    And name is "Cairns"
+    And name is: "Cairns"
 
-    And cod is "200"
+    And cod is: 200
 

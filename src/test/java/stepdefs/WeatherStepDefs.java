@@ -34,7 +34,7 @@ public class WeatherStepDefs {
         params.get("icon");
     }
 
-    @Then("base is {string}")
+    @Then("base is: {string}")
     public void check_base(String base) {
 
     }
@@ -48,7 +48,7 @@ public class WeatherStepDefs {
         Double.parseDouble(params.get("temp_max"));
     }
 
-    @Then("visibility is {int}")
+    @Then("visibility is: {int}")
     public void check_visibility(int visibility) {
 
     }
@@ -59,12 +59,12 @@ public class WeatherStepDefs {
         Integer.parseInt(params.get("deg"));
     }
 
-    @Then("cloud is:")
+    @Then("clouds are:")
     public void check_cloud(Map<String, Integer> params) {
         params.get("all");
     }
 
-    @Then("dt is {int}")
+    @Then("dt is: {int}")
     public void check_dt(int dt) {
 
     }
@@ -79,18 +79,18 @@ public class WeatherStepDefs {
         Long.parseLong(params.get("sunset"));
     }
 
-    @Then("id is {long}")
+    @Then("id is: {long}")
     public void check_id(long id) {
 
     }
 
-    @Then("name is {String}")
+    @Then("name is: {string}")
     public void check_name(String name) {
 
     }
 
-    @Then("cod is {int}")
-    public void check_cod(Integer cod) {
+    @Then("cod is: {int}")
+    public void check_cod(int cod) {
 
     }
 }

@@ -30,9 +30,9 @@ public class HomeworkLoops {
         numbers.add(18);
         numbers.add(19);
 
-        for (int i = 0; i <= numbers.size(); i++) {
+        for (int i = 0; i < numbers.size(); i++) {
             if ((i/2) == 4) {
-                System.out.println(numbers.get(i));
+                System.out.println(numbers.get(i++));
             }
         }
     }
